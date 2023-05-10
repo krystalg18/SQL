@@ -1,0 +1,12 @@
+--Create a department store database
+
+CREATE TABLE department_store (id INTEGER, name TEXT, quantity INTEGER, brand TEXT, price INTEGER);
+
+INSERT INTO department_store VALUES (1, "perfumes", 5, "Gucci", 20);
+INSERT INTO department_store VALUES (2, "tops", 10, "Hollister", 8);
+INSERT INTO department_store VALUES (3, "bottoms", 20, "AE", 65);
+
+--display the database ordered by price
+SELECT * FROM department_store ORDER BY price;
+
+--What is the sum price of items in the perfumes section?
